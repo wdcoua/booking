@@ -1,0 +1,14 @@
+.line{
+  background-color: #00310f;
+  line-height: 32px;
+height: 32px;
+width: 50%;
+max-width: 80%;
+margin: auto;
+padding-left: 20px;
+}
+
+.line:hover{
+  background-color: rgb(32, 32, 0);
+  cursor: pointer;
+}

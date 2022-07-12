@@ -1,0 +1,24 @@
+.captchaDiv{
+    display: block;
+}
+
+.noCaptcha{
+    display: none;
+}
+
+.error{
+    color: red;
+}
+
+.noError{
+    display: none;
+}
+
+.sc{
+    color: green;
+}
+
+.form_container{
+    text-align: center;
+    padding: 10px;
+}

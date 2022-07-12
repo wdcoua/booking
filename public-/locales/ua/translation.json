@@ -1,0 +1,13 @@
+{
+
+  "header": {
+    "lang": {
+      "main": "UA",
+      "other": " / RU"
+    },
+    "login": "Логін",
+    "change_theme_dark": "Перемкнути на темну тему",
+    "change_theme_light": "Перемкнути на світлу тему"
+  }
+  
+}

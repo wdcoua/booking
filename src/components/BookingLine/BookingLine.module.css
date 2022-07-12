@@ -1,0 +1,15 @@
+.line{
+  background-color: #310000;
+  line-height: 32px;
+height: 32px;
+width: 50%;
+max-width: 80%;
+margin: auto;
+padding-left: 20px;
+color: grey;
+}
+
+.line:hover{
+  background-color: black;
+  cursor: not-allowed;
+}

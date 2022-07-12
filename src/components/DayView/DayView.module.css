@@ -1,0 +1,45 @@
+.site_calendar_demo_card {
+    width: 300px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+  
+    text-align: center;
+    margin: auto;
+    /* color: #fff !important;
+    background-color: black !important; */
+  }
+
+  .day_red,.day_grey,.day_green,.day_yellow,.day_blue{
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .day_red{
+    background-color: rgb(255, 113, 113);
+  }
+
+  .day_grey{
+    background-color: rgb(233, 233, 233);
+  }
+
+  .day_green{
+    background-color: rgb(132, 255, 132);
+  }
+
+  .day_yellow{
+    background-color: yellow;
+  }
+
+  .day_blue{
+    background-color: rgb(153, 153, 255);
+  }
+
+  .link{
+    cursor: pointer;
+  }
+
+  .header{
+    color: #f0f0f0;
+    text-align: center;
+    cursor: pointer;
+  }
