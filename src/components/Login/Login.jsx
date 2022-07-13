@@ -73,10 +73,10 @@ const Login = (props) => {
     // }
     return <div className={c.form_container}>
         <h1>{t('auth.title')}</h1>
-        {(props.match.params.sc && props.match.params.sc === 'signup_completed')
+        {/* {(props.match.params.sc && props.match.params.sc === 'signup_completed')
             ? <div className={c.sc}>{t('auth.signup_completed')} <br/><br/></div>
             : ''
-        }
+        } */}
         <LoginReduxForm onSubmit={onSubmit} {...props} rememberMe={rememberMe} setRM={setRM} /><br/>
         {/*<LoginReduxForm2 onSubmit={onSubmit2} {...props} />*/}
         {t('auth.if_no_login')} <NavLink to='/signup'>{t('auth.register')}</NavLink>

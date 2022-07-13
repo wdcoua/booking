@@ -20,7 +20,7 @@ import { uploadBooking,setSelectedDate,getSelectedDateBooking,setServerAnswer } 
 import moment from 'moment';
 // import 'moment/locale/uk';
 // moment.locale('uk');
-//
+
 
 
 const AddBookingForm = (props) => {

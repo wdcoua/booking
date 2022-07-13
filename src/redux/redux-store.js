@@ -6,13 +6,17 @@ import admin_reducer from "./admin_reducer.ts";
 import settings_reducer from "./settings_reducer";
 // import {reducer as formReducer} from "redux-form";
 import { getDefaultMiddleware } from '@reduxjs/toolkit';
+import auth_reducer from "./auth_reducer";
+import app_reducer from "./app_reducer";
 
 
 let reducers = combineReducers({
      book: booking_reducer,
      admin: admin_reducer,
     //  form: formReducer,
-     settings: settings_reducer
+     settings: settings_reducer,
+     auth: auth_reducer,
+     app: app_reducer
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

@@ -19,8 +19,12 @@ import BookingLineEmpty from "../BookingLineEmpty/BookingLineEmpty";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import s from './MainComponent.module.css'
+import i18n from "i18next";
+
 
 const MainComponent = () => {
+
+  i18n.changeLanguage('ua')
 
   let match = useMatch("/show_day/:selectedDate");
   let match2 = useMatch("/add_booking/:selectedDate/:selectedHour");
@@ -29,6 +33,10 @@ const MainComponent = () => {
     // need to reconfigure here
     // https://github.com/remix-run/react-router/blob/main/docs/upgrading/v5.md
 
+
+    // let auth = {
+    //   isAuth: false
+    // }
 
     return (
           <Routes>
