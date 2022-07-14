@@ -48,6 +48,7 @@ const MainComponent = () => {
             <Route path="show_day/:selectedDate" element={<DayView selectedDate={match && match.params.selectedDate} />} />
             <Route path="/login" element={<Login />} />
             {/* <Route path="/admin" element={<AdminContainer />} /> */}
+            <Route path="/index" element={<CalendarContainer />} />
             <Route path="/" element={<CalendarContainer />} />
               {/* <Route path="me" element={<OwnUserProfile />} />
               <Route path=":id" element={<UserProfile />} /> */}

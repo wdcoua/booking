@@ -56,4 +56,113 @@ export const API = {
             
     },
 
+    signup(login,email, pass,phone,addr){
+        // console.log(email)
+        return instance
+            .post('auth/signup',{
+                email: email,
+                pass: pass,
+                login: login,
+                phone: phone,
+                addr: addr,
+            })
+            .then(resp => {
+                    // console.log('resp - signup');
+                    // console.log(resp);
+                    //resp.data.cp = currentPage;
+                    return resp.data.data
+                }
+            )
+            .catch(error => { // catches errors
+                return error.response
+                // error handling, use error.response to access the non 2xx response
+            });
+    },
+    saveInfo(addr,city, zip,np_dep,receiver, phone, pass){
+        // console.log(email)
+        return instance
+            .post('auth/saveInfo',{
+                pass: pass,
+                phone: phone,
+                addr: addr,
+                city, zip,np_dep,receiver,
+            })
+            .then(resp => {
+                    // console.log('resp - signup');
+                    // console.log(resp);
+                    //resp.data.cp = currentPage;
+                    return resp.data.data
+                }
+            )
+            .catch(error => { // catches errors
+                return error.response
+                // error handling, use error.response to access the non 2xx response
+            });
+    },
+    login(email, pass, remember, captcha){
+        // console.log(email)
+        return instance
+            .post('auth/login',{
+                email: email,
+                pass: pass,
+                rememberMe: remember,
+                captcha: captcha,
+            })
+            .then(resp => {
+                    // console.log('resp - login');
+                    // console.log(resp);
+                    //resp.data.cp = currentPage;
+                    return resp.data.data
+                }
+            )
+            .catch(error => { // catches errors
+                return error.response
+                // error handling, use error.response to access the non 2xx response
+            });
+    },
+    authMe(){
+        return instance
+            .get('auth/me')
+            .then(resp => {
+                    // console.log('resp - authMe');
+                    // console.log(resp.data);
+                    return resp.data.data
+                }
+            )
+            .catch(error => { // catches errors
+                return error.response
+                // error handling, use error.response to access the non 2xx response
+            });
+    },
+    logOut(){
+        return instance
+            .delete('auth/login')
+            .then(resp => {
+                    // console.log('resp - logOut');
+                    // console.log(resp);
+                    return resp.data
+                }
+            )
+            .catch(error => { // catches errors
+                return error.response
+                // error handling, use error.response to access the non 2xx response
+            });
+    },
+    getCaptcha(){
+        return instance
+            .get('auth/captcha')
+            .then(resp => {
+                    // console.log('resp - captcha');
+                    // console.log(resp);
+                    return resp.data
+                }
+            )
+            .catch(error => { // catches errors
+                return error.response
+                // error handling, use error.response to access the non 2xx response
+            });
+    },
+
+
+
 }
