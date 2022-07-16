@@ -15,6 +15,7 @@ import CalendarContainer from "../CalendarContainer/CalendarContainer";
 import DayView from "../DayView/DayView";
 import AddBooking from "../AddBooking/AddBooking";
 import Login from "../Login/Login";
+import Signup from "../Signup/Signup";
 import BookingLineEmpty from "../BookingLineEmpty/BookingLineEmpty";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -47,6 +48,7 @@ const MainComponent = () => {
 
             <Route path="show_day/:selectedDate" element={<DayView selectedDate={match && match.params.selectedDate} />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
             {/* <Route path="/admin" element={<AdminContainer />} /> */}
             <Route path="/index" element={<CalendarContainer />} />
             <Route path="/" element={<CalendarContainer />} />

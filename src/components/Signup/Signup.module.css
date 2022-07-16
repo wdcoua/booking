@@ -1,0 +1,28 @@
+.captchaDiv{
+    display: block;
+}
+
+.noCaptcha{
+    display: none;
+}
+
+.error{
+    color: red;
+}
+
+.noError{
+    display: none;
+}
+
+.header{
+    text-align: center;
+}
+
+.input{
+    margin: 20px;
+}
+
+.form_container{
+    text-align: center;
+    padding: 10px;
+}
