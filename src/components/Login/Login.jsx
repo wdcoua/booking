@@ -318,3 +318,4 @@ export default compose(
 //         <a href={`https://social-network.samuraijs.com/login`} target={`_blank`}>Потрібна авторизація</a>
 //     </>
 // }
+//
